@@ -1,17 +1,17 @@
-package com.dataphi.hadoop.gdelt.clustering
+package com.aamend.hadoop.gdelt.clustering
 
 import java.io.{File, StringReader}
 
-import com.dataphi.hadoop.gdelt.io.ArticleWritable
+import com.aamend.hadoop.gdelt.io.ArticleWritable
 import org.apache.hadoop.io.IntWritable
 import org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat
 import org.apache.lucene.analysis.en.EnglishAnalyzer
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute
-import org.apache.spark.SparkContext._
 import org.apache.spark.mllib.clustering.KMeans
 import org.apache.spark.mllib.feature.{HashingTF, IDF}
 import org.apache.spark.{SparkConf, SparkContext}
+import org.apache.spark.SparkContext._
 
 object GdeltClustering extends App {
 

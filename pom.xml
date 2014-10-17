@@ -5,7 +5,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.dataphi.hadoop</groupId>
+    <groupId>com.aamend.hadoop</groupId>
     <artifactId>gdelt-clustering</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -22,7 +22,7 @@
         <developer>
             <id>aamend</id>
             <name>Antoine Amend</name>
-            <email>a.amend@dataphi-consulting.com</email>
+            <email>antoine.amend@gmail.com</email>
             <roles>
                 <role>Data Scientist</role>
                 <role>Developer</role>
@@ -61,6 +61,18 @@
                         <artifactId>scala-library</artifactId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.spark</groupId>
+                <artifactId>spark-sql_2.10</artifactId>
+                <version>${spark.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.spark</groupId>
+                <artifactId>spark-hive_2.10</artifactId>
+                <version>${spark.version}</version>
+                <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.apache.spark</groupId>
@@ -140,6 +152,14 @@
         <dependency>
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-mllib_2.10</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql_2.10</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-hive_2.10</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.hadoop</groupId>

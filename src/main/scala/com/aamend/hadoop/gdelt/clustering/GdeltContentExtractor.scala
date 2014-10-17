@@ -1,13 +1,13 @@
-package com.dataphi.hadoop.gdelt.clustering
+package com.aamend.hadoop.gdelt.clustering
 
 import java.io.File
 
-import com.dataphi.hadoop.gdelt.io.{ArticleWritable, EventInputFormat}
+import com.aamend.hadoop.gdelt.io.{ArticleWritable, EventInputFormat}
 import com.gravity.goose.{Configuration, Goose}
 import org.apache.hadoop.io.{IntWritable, Text}
 import org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat
-import org.apache.spark.SparkContext._
 import org.apache.spark.{SparkConf, SparkContext}
+import org.apache.spark.SparkContext._
 import org.json4s.DefaultFormats
 import org.json4s.jackson.JsonMethods._
 

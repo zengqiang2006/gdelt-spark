@@ -1,4 +1,4 @@
-package com.dataphi.hadoop.gdelt.io;
+package com.aamend.hadoop.gdelt.io;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FSDataInputStream;
@@ -89,7 +89,7 @@ public class EventRecordReader extends RecordReader<Text, Text> {
         entities.add(new Entity("actor2Geo", geo));
         entities.add(new Entity("eventGeo", geo));
         entities.add(new Entity("dateAdded", Integer.class));
-        entities.add(new Entity("url", String.class));
+        entities.add(new Entity("sourceUrl", String.class));
 
         FileSplit split = (FileSplit) genericSplit;
         this.split = split;

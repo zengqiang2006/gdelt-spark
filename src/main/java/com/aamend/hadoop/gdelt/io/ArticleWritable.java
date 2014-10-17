@@ -1,4 +1,4 @@
-package com.dataphi.hadoop.gdelt.io;
+package com.aamend.hadoop.gdelt.io;
 
 import org.apache.hadoop.io.Writable;
 

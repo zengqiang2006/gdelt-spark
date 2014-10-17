@@ -39,6 +39,19 @@ Spark / Scala analytics jobs against GDELT dataset (http://www.gdeltproject.org/
 
 This will create a shaded JAR including all dependencies required for the project execution
 
+## Misc Analytics
+
+* GkgTopN : Extract the topN themes, persons and organization from GKG dataset
+* GoldsteinSqlSpark: Use SQLSpark to query GKG dataset
+* SparkMovingAverage: Create a moving window average for supplied data points
+
+## Misc result
+
+* Using some above spark jobs, I've been able to create the following graph showing the average goldstein scale between russia and ukraine over the past 30 years
+
+![alt tag](https://raw.github.com/aamend/gdelt-spark/master/src/main/resources/MovingAverageGoldstein.png)
+
+
 ## Authors
 
 Antoine Amend <antoine.amend@gmail.com>
